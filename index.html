@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container" id="container">
+      <div class="left-block">
+        <h2 class="header">Stay updated!</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque at sequi sunt quod veniam, vel rem dicta adipisci assumenda quo.</p>
+        <ul class="list">
+          <li class="item"><img src="/assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+          <li class="item"><img src="/assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+          <li class="item"><img src="/assets/images/icon-list.svg" alt="">And much more</li>
+        </ul>
+        <form id="form" action="">
+          <div class="form-header">
+            <p>Email adress</p>
+            <p class="error" id="error"></p>
+          </div>
+          <input type="text" name="email" id="email" placeholder="email@company.com">
+          <input id="submit" type="submit" value="Subscribe to monthly Newsletter" class="submit">
+        </form>
+      </div>
+      <div class="right-block">
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+
+      
+    </div>
+    <div class="thanks-box" id="thanks-box">
+      <img src="/assets/images/icon-success.svg" alt="">
+      <h1 class="thanks-header">Thanks for subscribing!</h1>
+      <p class="thanks-text">A confirmation email has hen sent to
+        ash@loremcompany.com. Please open It and click
+        the button inside to confirm your subscription.</p>
+      <button class="submit dismiss" id="dismiss">Dismiss message</button>
+    </div>
+  </div>
+
+      
+</body>
+<script src="script.js"></script>
+</html>
