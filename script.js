@@ -11,9 +11,7 @@ emailForm.addEventListener('submit', function (event) {
     
     const email = emailInput.value.trim();
     if (validateEmail(email)) {
-        resultMessage.innerText = 'Valid email address.';
-        resultMessage.style.backgroundColor = 'rgb(223, 253, 231)';
-        resultMessage.style.color = 'green';
+        resultMessage.innerText = '';
         succesMsg.classList.add('active');
         formContainer.classList.add('active');
     } else {
@@ -24,6 +22,8 @@ emailForm.addEventListener('submit', function (event) {
 dismiss.addEventListener("click", function(){
     succesMsg.classList.remove('active');
     formContainer.classList.remove('active');
+    esultMessage.innerText = '';
+
 })
 
 function validateEmail(email) {
